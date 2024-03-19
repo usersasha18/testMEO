@@ -8,7 +8,9 @@
           <a href="/">Феофанов Александр</a>
           <div class="nav-links">
             {#each nav as link }
-                <a class="link" href={link.href}>{link.title}</a>                
+                {#if link.isShow}
+                    <a class="link" href={link.href}>{link.title}</a>     
+                {/if}           
             {/each}
           </div>
         </div>
@@ -17,24 +19,26 @@
 </div>
 
 <script>
-  import { NavbarCollapse } from "react-bootstrap";
-
     const nav = [
         {
             title: "Обо мне",
-            href: "/about"
+            href: "/about",
+            isShow: true
         },
         {
             title: "Блог",
-            href: "/blog"
+            href: "/blog",
+            isShow: true
         },
         {
             title: "Порфолио",
-            href: "/projects"
+            href: "/projects",
+            isShow: true
         },
         {
             title: "Контакты",
-            href: "/contact"
+            href: "/contact",
+            isShow: true
         },
     ]
 </script>
