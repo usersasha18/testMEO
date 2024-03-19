@@ -27,7 +27,7 @@
         },
         {
             title: "Блог",
-            href: "/blog",
+            href: "/bloger",
             isShow: true
         },
         {

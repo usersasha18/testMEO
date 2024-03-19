@@ -11,7 +11,7 @@
                 <h2>{route.title}</h2>
                 <p>{route.body}</p>
                 <p class="read-more">
-                    <a class="link" href={`/blog/posts/${route.id}`}>
+                    <a class="link" href={`/bloger/posts/${route.id}`}>
                         Читать далее
                     </a>
                 </p>
